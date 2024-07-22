@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+header h1{
+    padding-left: 20px;
+    font-size: 45px;
+}
+
+header h1:hover{
+    cursor: pointer;
+}
+nav{
+    margin-right: 25px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+}
+#col{
+    color: rgb(120, 53, 29);
+}
+#btn{
+    background-color:rgb(120, 53, 29) ;
+    padding: 20px;
+    color: white;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+#heroPage{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(27, 25, 25, 0.699),
+        rgba(34, 31, 31, 0.73)
+      ),
+      url("img/andrew-neel-cckf4TsHAuw-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#heroPage img{
+    width: fit-content;
+}
+
+.abtMin{
+    color: white;
+}
+#txt{
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+#txt2{
+  word-break: break-all; 
+  word-wrap: wrap;
+  
+}
+#min{
+    font-size: 90px;
+    padding-bottom: 20px;
+}
+.min{
+    transform: translateY(230px);
+    text-align: center;
+}
+/* Css for houses*/
+
+#houses{
+    margin-top: 70px;
+}
+#houses img{
+    border-radius: 5px;
+}
+.domH{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.domh h3{
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 25px;
+}
+.domh p{
+    width: 290px;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
+#houses button{
+    color: white;
+    background-color:rgb(120, 53, 29);
+    border: none;
+    font-size: small;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+/*Bethel house style*/
+.bethelH{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-direction: row-reverse; 
+}
+.bethelh h3{
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 25px;
+}
+.bethelh p{
+    width: 290px;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
+/*Light House*/
+.lightH{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.lighth h3{
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 25px;
+}
+.lighth p{
+    width: 290px;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+footer{
+    margin-top: 70px;
+    background-color: rgb(35, 30, 30);
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.nav a{
+    padding-left: 50px;
+    color: white;
+    font-size: smaller;
+    
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+}
+.smalltxt{
+    display: grid;
+    color: white;
+    
+}
+.smalltxt p{
+    width: 180px;
+}
+.smalltxt a{
+    margin-top: 25px;
+    text-decoration: none;
+    color: black;
+    font-size: smaller;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 15px 0px;
+    font-weight: 700;
+}
+.logo{
+    color: white;
+    font-size: 50px;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    scroll-behavior: smooth;
+    
+}
+.address{
+    text-align: right;
+    color: white;
+}
+.address p{
+    font-size: 15px;
+
+}
+.address span{
+    display: block;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+#brandName{
+    background-color: rgb(135, 75, 53);
+    font-size: small;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+@media screen and  (max-width:764px){
+    .min{
+        transform: translateY(260px)
+    }
+ header nav{
+    display: none;
+ }
+ #heroPage{
+    
+    width:auto;
+    height:900px;
+ }
+ #txt{
+    font-size: auto;
+ }
+ #min{
+    font-size: 45px;
+ }
+
+ .domH{
+    flex-direction: column;
+ }
+ .bethelH{
+    flex-direction: column;
+ }
+ .lightH{
+    flex-direction: column;
+ }
+ footer nav{
+    display: grid;
+   line-height: 20px;
+ }
+ .footer{
+    flex-direction: column;
+ }
+ .smalltxt{
+    margin-bottom: 40px;
+ }
+ .logo{
+    margin-bottom: 40px;
+ }
+ .address p{
+    font-size:large;
+ }
+}
